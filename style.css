@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.navbar-links
+{
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a
+{
+    text-decoration: none;
+    color: maroon;
+}
+
+.navbar-links a:hover
+{
+    text-decoration: underline;
+    color: maroon;   
+}
+
+.navbar-menu-toggle
+{
+    display: none;
+}
+
+/*Side Navbar*/
+
+.side-navbar
+{
+    background-color: maroon;
+    color: white;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    transition: 0.6s;
+    display:none;
+   
+}
+
+.side-navbar-links
+{
+    margin-bottom: 30px;
+ 
+}
+
+.side-navbar-links a
+{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover
+{
+    text-decoration: underline;
+    color: black;
+}
+
+/*Header*/
+.header
+{
+  display: flex;
+  justify-content:center;
+  gap: 50px;
+ padding: 50px;  
+}
+
+.headerbutton
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: maroon;
+    color: white;
+    cursor:pointer;
+}
+
+/*Services*/
+
+.service{
+    padding: 20px;
+}
+
+.service-container1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.service-container2{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container2 div{
+    background-color:wheat;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/*New Arrival*/
+
+.new-arrival
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.new-arrival-container
+{
+    position: relative;
+    flex-basis: 20%
+
+}
+
+.new-arrival button
+{
+    padding-left: 10%;
+    padding-right:10%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    margin-top:10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+ 
+}
+
+/*News */
+
+.news
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.news input
+{
+    padding: 10px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid 3px;
+}
+
+.news button
+{
+    margin-top: 10px;
+    color: white;
+    background-color: maroon;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Footer*/
+
+.footer
+{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: maroon;
+    color: wheat;
+}
+
+
+/*Product Section*/
+
+.product-section
+{
+margin-top: 20px;
+}
+
+.product-search
+{
+    width: 80%;
+    border:solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+
+.product-search input
+{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.product-search input:focus
+{
+    outline: none;
+}
+
+.products
+{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.product-box
+{
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img
+{
+    border-radius: 10px;
+}
+
+/*Contact*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+header {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.contact-info div {
+    width: 30%;
+}
+.contact-info h3 {
+    margin-bottom: 10px;
+}
+.contact-info p {
+    font-size: 16px;
+    color: #555;
+}
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: #0056b3;
+}
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+.social i
+  {
+    display: flex;
+  }
+
+  /*Order*/
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+button {
+    padding: 10px 20px;
+    background-color:maroon;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: maroon;
+}
+/*Media Query*/
+
+@media screen and (max-width:600px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container1{
+        display: none;
+    }
+    .service-container2{
+        flex-direction: column;
+    }
+    
+}
+

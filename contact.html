@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selvi E-StorE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--My CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+</head>
+<body>
+
+   
+
+   
+    <!--Navbar-->
+    <nav class="navbar">
+        <h1>Selvi E-Store</h1>
+        <div class="navbar-links">
+            <p class="navbar-link">
+                <a href="index.html">Home</a>
+            </p>
+            <p class="navbar-link">
+                <a href="collections.html">Collections</a>
+            </p>
+            <p class="navbar-link">
+                <a href="orders.html">Orders</a>
+            </p>
+            <p class="navbar-link">
+                <a href="contact.html">Contact</a>
+            </p>
+            
+
+        </div>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!--Side Navbar-->
+    <div class="side-navbar">
+        <p style="text-align: right; cursor: pointer;" onclick="closeNavbar()">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-navbar-links"><a href="index.html">Home</a></p>
+            <p class="side-navbar-links "><a href="collections.html">Collections</a></p>
+            <p class="side-navbar-links"><a href="orders.html">Orders</a></p>
+            <p class="side-navbar-links"><a href="contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to show/hide the side navbar
+        var sidenav = document.querySelector(".side-navbar");
+
+        function showNavbar() {
+            sidenav.style.left = "0"  // Show the navbar
+        }
+
+        function closeNavbar() {
+            sidenav.style.left = "-60%";  // Hide the navbar
+        }
+
+    </script>
+     <!-- Main Content Section -->
+     <div class="container">
+        <div class="contact-info">
+            <!-- Contact Information -->
+            <div>
+                <h3>Our Address</h3>
+                <p>No.123 , DLF Building </p>
+                <p>Chennai, TamilNadu, 600001</p>
+            </div>
+
+            <!-- Phone and Email -->
+            <div>
+                <h3>Contact Us</h3>
+                <p><strong>Phone:</strong> +91 123456789</p>
+                <p><strong>Email:</strong> support@SelviE-Store.com</p>
+            </div>
+
+            <!-- Social Media -->
+            <div class="social">
+                <h3>Follow Us</h3>
+                <p>Stay updated with our latest products and promotions:</p>
+                <a  href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><br>
+                <a  href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a><br>
+                <a  href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <body>
+
+            
+
+   
+
+        <!-- Contact Form -->
+        <form action="/submit_contact_form" method="POST">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions or need assistance, fill out the form below and we’ll get back to you.</p>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required placeholder="Type your message here" rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+     <!--Footer-->
+
+     <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box1">
+              <h2>Selvi E-store </h2>
+              <p>Scroll down to Ordering and Shopping Preferences and click on Profile.
+                You'll then be able to see all the reviews you've written.</p>
+            </div>
+            <div class="footer-icon-container">
+                
+
+            </div>
+        </div>
+        <p>@2025SelviE-Store</p>
+    </div>
+
+    <script src="collections.js"></script>
+
+
+    
+</body>
+</html>
